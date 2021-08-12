@@ -1,12 +1,28 @@
-.active {
+
+.links{
+    margin: auto;
+}
+.links a{
     color: black;
     font-weight: bold;
     text-decoration: none;
-   
     padding: 1rem;
 }
-.active:hover{
-    background-color: white;
-    color: black;
-    border-bottom: 2px black;
+@media screen and (max-width:479px) {
+    .links li{
+        margin-bottom: 0.75rem; 
+    }
+    .links a{
+        padding: 0.2rem;
+    }
 }
+@media screen and (min-width:480px) {
+    
+    .active {
+        background-color: white;
+        color: black;
+        border-bottom: 2px black;
+    }    
+}
+
+
