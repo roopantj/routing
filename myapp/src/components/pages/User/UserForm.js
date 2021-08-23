@@ -1,8 +1,9 @@
 import styles from './UserForm.module.css';
 import { InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap';
-import { Button,Alert } from 'reactstrap';
-import {Link,useHistory} from 'react-router-dom';
+import { Button, Alert } from 'reactstrap';
+import {Link, useHistory} from 'react-router-dom';
 import { useRef, useState } from 'react';
+
 
 const UserForm =props=>{
 
@@ -31,6 +32,7 @@ const UserForm =props=>{
      useridInputRef.current.value=''
      setIsValid(true)
   }
+
   return(
         <div className={styles.userform}>
           <h3>New User</h3>
@@ -60,7 +62,6 @@ const UserForm =props=>{
                  <Button color="danger">Cancel</Button>
               </Link>
            </div>
-           
         </div>
     )
 }
